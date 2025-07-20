@@ -1,0 +1,93 @@
+    @media (max-width: 992px) {
+      .navbar-nav {
+        margin: 0;
+      }
+    }.carousel-item {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .carousel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Black overlay */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .carousel-overlay h1 {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+
+    .carousel-overlay p {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-overlay h1 {
+        font-size: 2rem;
+      }
+
+      .carousel-overlay p {
+        font-size: 1rem;
+      }
+    } .portfolio-box {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-box img {
+    transition: transform 0.4s ease;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .portfolio-box:hover img {
+    transform: scale(1.1);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .portfolio-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .lifted {
+    margin-top: -30px;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .lifted {
+      margin-top: 0;
+    }
+  }
